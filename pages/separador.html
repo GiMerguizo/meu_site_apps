@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Separador de Texto</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/separador.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Separador de Texto</h1>
+        <p>Digite seu texto separado por vírgulas abaixo:</p>
+
+        <textarea 
+            id="textoEntrada" 
+            rows="5" 
+            placeholder="Texto 1, Texto 2, Teste, Qualquer coisa"
+        ></textarea>
+
+        <button id="botaoSeparar">Separar Texto</button>
+
+        <h2>Resultado:</h2>
+        <pre id="areaResultado"></pre>
+    </div>
+
+    <script src="/js/separador.js"></script>
+</body>
+</html>
