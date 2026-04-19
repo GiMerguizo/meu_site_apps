@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteador</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/separador.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Sorteador</h1>
+        <div class="inputNumber">
+            <label for="participantes">Digite a quantidade de participantes:</label>
+            <input type="number" name="participantes" id="participantes" placeholder="10" min="0" max="100"/>
+        </div>
+        
+        <div class="inputText"> 
+            <p>Nome dos participantes:</p>
+            <textarea 
+                id="textoEntrada" 
+                rows="5" 
+                placeholder="João, Maria, Pedro, Ana"
+            ></textarea>
+        </div>
+
+        <div class="inputNumber">
+            <label for="doces">Quantidade de pratos doces:</label>
+            <input type="number" name="participantes" id="doces" placeholder="7" min="0" max="100"/>
+        </div>
+        <div class="inputNumber">
+            <label for="salgados">Quantidade de pratos salgados:</label>
+            <input type="number" name="participantes" id="salgados" placeholder="3" min="0" max="100"/>
+        </div>
+        
+        <button id="botaoSortear">Sortear</button>
+
+        <div class="resultado">
+            <h2>Resultado:</h2>
+            <pre id="areaResultado"></pre>
+        </div>
+    </div>
+
+    <script src="/js/sorteador.js"></script>
+</body>
+</html>
